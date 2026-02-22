@@ -1,0 +1,35 @@
+# Each entry:
+# - key: dotpath into cfg
+# - suggest: float|float_log|int|categorical
+# - params depend on suggest
+
+space:
+  - key: train.lr
+    suggest: float_log
+    low: 1.0e-5
+    high: 1.0e-1
+
+  # - key: model.name
+  #   suggest: categorical
+  #   choices: [cnn] # rnn, cnn
+
+  # - key: model.hidden
+  #   suggest: int
+  #   low: 64
+  #   high: 512
+  #   step: 64
+
+  - key: model.dropout
+    suggest: float
+    low: 0.0
+    high: 0.8
+    step: 0.1
+
+  - key: train.weight_decay
+    suggest: float_log
+    low: 1.0e-7
+    high: 1.0e-1
+
+  - key: data.batch_size
+    suggest: categorical
+    choices: [64, 128, 256,]
