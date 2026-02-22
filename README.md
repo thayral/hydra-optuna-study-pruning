@@ -75,9 +75,8 @@ This makes pruning visible and easy to reason about without a large codebase.
 
 
 
-<!-- ![Steps executed histogram](media/steps_executed_hist.png)    -->
-![Training curves](media/training_curves.png)   
-![Optuna history](media/optuna_history.png)  
+![Training curves](media/training_curves_2.png)   
+![Optuna history](media/optuna_history_2.png)  
 
 
 ---
