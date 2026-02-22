@@ -73,6 +73,13 @@ To keep things concrete, i used a very small MNIST setup:
 Some trials run to completion. Others are stopped early when they clearly underperform.  
 This makes pruning visible and easy to reason about without a large codebase.
 
+
+
+![Steps executed histogram](assets/steps_executed_hist.png)   
+![Training curves](assets/training_curves.png)   
+![Optuna history](assets/optuna_history.png)  
+
+
 ---
 
 ## Running it
@@ -80,7 +87,7 @@ This makes pruning visible and easy to reason about without a large codebase.
 ```bash
 pip install -r requirements.txt
 python src/main.py
-
+```
 
 
 
