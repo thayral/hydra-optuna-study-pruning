@@ -84,8 +84,21 @@ This makes pruning visible and easy to reason about without a large codebase.
 ## Running it
 
 ```bash
+
+# running training demo (python src/main.py) 
+
 pip install -r requirements.txt
-python src/main.py optuna.study.name=demo_study_1 optuna.pruner.n_warmup_steps=2 optuna.n_trials=10 train.epochs=8
+
+python src/main.py \
+  optuna.study.name=demo_study_1 \
+  optuna.pruner.n_warmup_steps=2 \
+  optuna.n_trials=10 \
+  train.epochs=8
+
+# visualize
+pip install matplotlib plotly
+python src/visualize_study.py --study-name demo_study_3
+
 ```
 
 
