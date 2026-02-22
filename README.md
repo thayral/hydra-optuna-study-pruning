@@ -85,7 +85,7 @@ This makes pruning visible and easy to reason about without a large codebase.
 
 ```bash
 pip install -r requirements.txt
-python src/main.py
+python src/main.py optuna.study.name=demo_study_1 optuna.pruner.n_warmup_steps=2 optuna.n_trials=10 train.epochs=8
 ```
 
 
